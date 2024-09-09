@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto Mágico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu" class="menu3d">
+        <div class="menu-content">
+            <div></div>
+            <h1>Laberinto Mágico</h1>
+            <p>Elige un nivel para comenzar tu aventura:</p>
+            <button id="easy" class="level-btn">Fácil</button>
+            <button id="medium" class="level-btn">Medio</button>
+            <button id="hard" class="level-btn">Difícil</button>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h2 id="level-title"></h2>
+        <canvas id="mazeCanvas"></canvas>
+        <div id="controls">
+            <button id="solve-maze">Resolver</button>
+            <button id="new-maze">Generar Nuevo Laberinto</button>
+            <button id="back-to-menu">Volver al menú</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
